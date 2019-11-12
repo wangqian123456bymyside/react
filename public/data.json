@@ -1,0 +1,54 @@
+{
+    "id":0,
+    "info": [
+                {
+                    "img":"img/t1.jpg",
+                    "name":"贝尔斯钴折扣商城",
+                    "title":"",
+                    "timer":"7月14日"
+                },
+                {
+                    "img":"img/t2.jpg",
+                    "name":"订阅号",
+                    "title":"雷锋网:CNCC 2017 | 专访清华胡事民教事业",
+                    "timer":"21:09"
+                },
+                {
+                    "img":"img/t3.jpg",
+                    "name":"七田真",
+                    "title":"你在哪？还好吗？#七田小有召集令#欢迎广大校友来访",
+                    "timer":"20:50"
+                },
+                {
+                    "img":"img/t4.jpg",
+                    "name":"CSDN AI 技术交流群3",
+                    "title":"CSDN学校小秘书：今晚直播，AI领域大拿来访",
+                    "timer":"20:50"
+                },
+                {
+                    "img":"img/t1.jpg",
+                    "name":"贝尔斯钴折扣商城",
+                    "title":"",
+                    "timer":"7月14日"
+                },
+                {
+                    "img":"img/t2.jpg",
+                    "name":"订阅号",
+                    "title":"雷锋网:CNCC 2017 | 专访清华胡事民教事业",
+                    "timer":"21:09"
+                },
+                {
+                    "img":"img/t3.jpg",
+                    "name":"七田真",
+                    "title":"你在哪？还好吗？#七田小有召集令#欢迎广大校友来访",
+                    "timer":"20:50"
+                },
+                {
+                    "img":"img/t4.jpg",
+                    "name":"CSDN AI 技术交流群3",
+                    "title":"CSDN学校小秘书：今晚直播，AI领域大拿来访",
+                    "timer":"20:50"
+                }
+            ]
+
+}

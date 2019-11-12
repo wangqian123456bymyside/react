@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import axios from 'axios'
+import Head from "./pages/head"
+import Section from "./pages/section"
+import Foot from "./pages/foot"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let data = []
+//请求json数据
+axios.get('data.json').then(res => {
+    data = res.data.info
+    //获取到数据后渲染传参
+    xuan (data)
+})
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//渲染封装
+function xuan (data) {
+    ReactDOM.render(
+        <div className="box">
+            <Head />
+            <Section data = {data} />
+            <Foot  />
+        </div>,
+        document.getElementById('root')
+    );
+}
+
+
+
