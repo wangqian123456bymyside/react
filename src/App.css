@@ -1,22 +1,201 @@
-.App {
-  text-align: center;
+ .App{
+     width:100%;
+     height:100%;
+ }
+ .HomeBox{
+     width:100%;
+     height:100%;
+     display:flex;
+     flex-direction:column;
+     position:fixed;
+ }
+ header{
+     width:100%;
+     background:#ffcf00;
+     height:1rem;
+     display:flex !important;
+     flex-direction:row !important;
+     justify-content:space-around;
+     align-items: center !important;
+     box-sizing:border-box;
+     padding-top:12px;
+      
+
+ }
+ header p:nth-child(2){
+     width:70%;background:#fff9e5;
+     height:37px;
+     border-radius:4px;
+     box-sizing:border-box;
+     padding:3px;
+ }
+ header input{
+    width:100%;height:100%;
+     text-align: center;background:#fff9e5;
+     border:0;outline:0;
+ }
+ .nav{
+     width:100%;
+     height:2.5rem;
+     /* background:red; */
+ }
+ .guessurlike{
+     
+     width:100%;
+     height:0.7rem;
+     border-bottom:1px solid #f5f4f1;
+     
+     line-height:50px;
+     font-size:17px;
+     box-sizing:border-box;
+     padding-left:20px;background:white;
+  
+ }
+ section{
+     flex:1;
+     overflow:auto; 
+
+ }
+  .img{
+      width:100px;
+
+      height:95px;
+      margin-top:10px;
+  }
+  /* For demo */
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 100%;
+     line-height: 14px; 
+    /* background: #364d79; */
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  .dls{
+      width:100%;
+      display:flex;background:white;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:space-around;
+  }
+  .dls dl{
+      width:20%;float: left;
+      text-align: center;
+  }
+  .dls dl dt {
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      align-content: center;
+      
+      
+  }
+  .dls dl dd{
+      text-align: center;
+     
+      font-size:14px;
+     
+  }
+  .kk{
+      background:white;
+      width:100%;
+      display:flex;
+      flex-direction:row;
+
+  }
+  .f{
+      width:100%;
+      display:flex !important;
+      flex-direction:row !important;
+      justify-content:space-between !important;
+      box-sizing:border-box;
+      padding-right:10px;
+  }
+  .kk dt{
+      width:35%;
+      text-align: center;
+  }
+  .kk dd{
+      width:65%;
+  }
+.sell{
+    color:#666666;
+    font-size:14px;
+}
+.dlss{
+    width:100%;
+    display:flex;background:white;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.dlss dl{
+    width:25%;float: left;
+    text-align: center;
+}
+.dlss dl dt {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content: center;
+    
+    
+}
+.dlss dl dd{
+    text-align: center;
+   
+    font-size:14px;
+   
+}
+.navtop{
+    width:100%;
+    height:50px;
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:space-around !important;
+    align-items: center;background:white;
+}
+.navtop p{
+    width:25%;
+    font-size:16px;
+    color:#b7b7b7;
+    text-align: center;
+    box-sizing:border-box;
+    padding-left:10px;
+
+}
+.navtop p span:nth-child(1){
+color:#727272;
+}
+.top{
+    width:100%;    
+    height:1rem;
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:space-around;
+    align-items: center !important;
+    box-sizing:border-box;
+    padding-top:6px;
+    position: fixed;
+    top:0;
+    color:white;
+}
+.searchBox {
+    width:70%;
+    height:35px;
+    border-radius:20px;
+    text-align: center;
+    background:white;
+    line-height:35px;
+   
 }
 
-.App-logo {
-  height: 40vmin;
-}
+#in{
+    width:70%;
+    border:0;
+    outline:0;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }

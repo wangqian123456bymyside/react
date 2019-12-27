@@ -1,26 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route,Switch} from 'react-router-dom'
+ 
+ import Home from './components/home'
+ import Page from './components/shouye'
+ 
+ (function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 640) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded文档加载完成不包含图片资源 onload包含图片资源*/
+})(document, window);
+
+
+/*
+
+var iWidth=document.documentElement.clientWidth  //getBoundingClientRect().width;
+ iWidth=iWidth>640?640:iWidth;
+ document.getElementsByTagName("html")[0].style.fontSize=iWidth/6.4+"px";*/
+
+ 
+ 
+ 
+
+
+
+class App extends React.Component {
+  
+    render(){
+    return (
+      <div className="App">  
+       
+	   <Switch>
+	   <Route path="/meishi" component={Page} />
+		   <Route path="/" component={Home} />
+
+	   </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;
