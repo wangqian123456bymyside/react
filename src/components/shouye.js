@@ -14,7 +14,8 @@ class App extends React.Component {
         super(props)
         this.state={
             list:[],
-            get:false
+            get:false,
+            back:false
         }
     }
 
@@ -31,7 +32,7 @@ class App extends React.Component {
 
     onScroll = (e) => {
         localStorage.setItem("scroll",e.target.scrollTop)
-        let {get}=this.state
+        let {get,back}=this.state
         let sec = document.querySelector('.section')
         console.log(sec.scrollTop)
         if(localStorage.getItem('scroll')){
@@ -43,14 +44,32 @@ class App extends React.Component {
             }else{
                 get=false
             }
+
+            if(sec.scrollTop>310){
+                back=true
+              
+                 
+
+            }else{
+                back=false
+            }
+
+
            }
+
+
            this.setState({            
-            get:get
+            get:get,
+            back:back
         })
      }
-  
+     top=()=>{
+        let sec = document.querySelector('.section')
+        sec.scrollTop=0
+
+    }
     render(){
-        const {list,get}=this.state
+        const {list,get,back}=this.state
 
     return (
       <div className="HomeBox">  
@@ -172,6 +191,9 @@ class App extends React.Component {
                    )
                })
            }
+           <p onClick={this.top} className="zhiding" style={{display:back?"block":"none"}}>
+           <Icon type="vertical-align-top" />
+           </p>
        </section>
       </div>
     )
